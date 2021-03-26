@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -27,8 +28,17 @@ public class ThirdFragment extends Fragment {
         TextView feedbackNotifications = view.findViewById(R.id.notifications);
         String nameSafe = (String) MainActivity.myData.get("name");
         String emailSafe = (String) MainActivity.myData.get("email");
+        Button exit = view.findViewById(R.id.exit);
+
 
         feedback.setText(feedback.getText() + " " + nameSafe);
         feedbackNotifications.setText(feedbackNotifications.getText() + " " + emailSafe);
+
+        exit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                System.exit(0);
+            }
+        });
     }
 }

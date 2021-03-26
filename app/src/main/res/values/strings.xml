@@ -19,4 +19,5 @@
     <string name="track_subscription">Subscribe to Task Tracker</string>
     <string name="subscription_feedback">Thanks for you subscription</string>
     <string name="feedback_notification">You are going to receive some notification about this great application through the email you have provided:</string>
+    <string name="feedback_exit">Exit</string>
 </resources>
